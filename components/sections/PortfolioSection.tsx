@@ -82,7 +82,7 @@ const portfolio = [
     href: "/",
     youtubeHref: "/",
     repoHref: "/",
-    image: work7,
+    image: work6,
     description:
       "The project is an Angular food e-commerce frontend website, and the first milestone achieved is a responsive and efficient search bar that helps users easily find their favorite food items.",
   },
@@ -92,7 +92,7 @@ const portfolio = [
     href: "/",
     youtubeHref: "/",
     repoHref: "/",
-    image: work8,
+    image: work7,
     description:
       "The project is a simple To Do app created with Flutter and Firebase, featuring Firebase authentication and Firestore for data management.",
   },
@@ -102,7 +102,7 @@ const portfolio = [
     href: "/",
     youtubeHref: "/",
     repoHref: "/",
-    image: work9,
+    image: work8,
     description:
       "App Anything is a chatbot powered by Google Gemini Pro, featuring a simple, authentication-free design that eliminates the need for login or signup. It has a minimal design and is created using Flutter.",
   },
@@ -112,7 +112,7 @@ const portfolio = [
     href: "/",
     youtubeHref: "/",
     repoHref: "/",
-    image: demo1,
+    image: work9,
     description:
       "This website showcases various design services, emphasizing the creation of unique visual identities. It highlights my skills in front-end web development and design aesthetics, using HTML, CSS, and JavaScript.",
   },
