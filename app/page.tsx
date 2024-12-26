@@ -1,4 +1,7 @@
+import AboutMe from "@/components/sections/AboutMe";
+import Achievements from "@/components/sections/Achievements";
 import CTATags from "@/components/sections/CTATags";
+import GallerySection from "@/components/sections/GallerySection";
 import HeroSection from "@/components/sections/HeroSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import Qualification from "@/components/sections/Qualification";
@@ -16,6 +19,9 @@ export default function Home() {
       <Tools />
       <PortfolioSection />
       <Qualification />
+      <Achievements />
+      <GallerySection />
+      <AboutMe />
     </main>
   );
 }
