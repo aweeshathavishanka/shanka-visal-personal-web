@@ -1,6 +1,7 @@
 import React from "react";
 import Tag from "../shared/tag";
 import { SiHyperskill } from "react-icons/si";
+import { QualificationList } from "./QualificationList";
 
 export default function Qualification() {
   return (
@@ -24,6 +25,7 @@ export default function Qualification() {
               A journey of learning and growth that fuels my expertise in
               design, development, and freelancing.
             </p>
+            <div>{/* <QualificationList /> */}</div>
           </div>
         </div>
       </div>

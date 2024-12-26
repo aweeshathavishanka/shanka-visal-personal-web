@@ -131,7 +131,7 @@ export default function PortfolioSection() {
         <div>
           <div className="flex items-start justify-start">
             <Tag
-              text="Portfolio"
+              text="Work / Case Study"
               icon={<SiHyperskill size={16} />}
               textColor="text-blue-600"
               borderColor="border-blue-600"
