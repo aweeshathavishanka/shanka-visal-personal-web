@@ -24,6 +24,8 @@ import {
 
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub, FaYoutube } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 
 const portfolio = [
   {
@@ -163,9 +165,9 @@ export default function PortfolioSection() {
                       alt={item.title}
                       width={300}
                       height={300}
-                      className="w-full h-40 object-cover rounded-md z-50"
+                      className="w-full h-40 object-cover rounded-md z-50 grayscale hover:grayscale-0 hover:cursor-pointer"
                     />
-                    <h2 className="text-lg font-semibold mt-4 ">
+                    <h2 className="text-lg font-normal mt-4 bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent ">
                       {item.title}
                     </h2>
                     <p className="text-sm text-gray-600 mt-2">
@@ -175,17 +177,17 @@ export default function PortfolioSection() {
                       <Link
                         href={item.href}
                         className="text-blue-600 hover:underline">
-                        View
+                        <MdArrowOutward size={24} />
                       </Link>
                       <Link
                         href={item.youtubeHref}
                         className="text-blue-600 hover:underline">
-                        YouTube
+                        <FaYoutube size={24} />
                       </Link>
                       <Link
                         href={item.repoHref}
                         className="text-blue-600 hover:underline">
-                        Code
+                        <FaGithub size={24} />
                       </Link>
                     </div>
                     {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-500/50 opacity-30 backdrop-blur-md "></div> */}
