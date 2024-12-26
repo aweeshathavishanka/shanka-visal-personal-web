@@ -58,7 +58,7 @@ export function SkillCard() {
 
   return (
     <div className="max-w-7xl mx-auto ">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
         {/* Loop through the first two skills as examples */}
         {skills.map((skill, index) => (
           <MagicCard

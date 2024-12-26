@@ -6,7 +6,7 @@ import { SkillCard } from "./SkillCard";
 
 export default function Skill() {
   return (
-    <div className=" py-10 md:py-[6rem]">
+    <div className=" py-10 md:py-[6rem] md:px-0 px-6">
       <div>
         <div className="max-w-7xl mx-auto py-4 md:py-[3rem]">
           <div className=" flex items-center justify-center">
