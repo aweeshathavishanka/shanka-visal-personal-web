@@ -63,14 +63,17 @@ export function SkillCard() {
         {skills.map((skill, index) => (
           <MagicCard
             key={index}
-            className="cursor-pointer flex-col items-center justify-center shadow-2xl py-10 px-8 text-4xl"
             gradientColor={theme === "dark" ? "#14109f" : "#14109f"}>
-            <div className="text-center">
-              <div className="text-6xl">{skill.icon}</div>
-              <h3 className="mt-2 text-xl font-normal bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent">
-                {skill.title}
-              </h3>
-              <p className="mt-2 text-sm text-gray-600">{skill.description}</p>
+            <div className="cursor-pointer flex-col items-center justify-center shadow-2xl py-10 px-8 text-4xl">
+              <div className="text-center">
+                <div className="text-6xl">{skill.icon}</div>
+                <h3 className="mt-2 text-xl font-normal bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent">
+                  {skill.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-600">
+                  {skill.description}
+                </p>
+              </div>
             </div>
           </MagicCard>
         ))}

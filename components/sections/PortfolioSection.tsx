@@ -26,6 +26,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
+import { BorderBeam } from "../ui/border-beam";
 
 const portfolio = [
   {
@@ -146,13 +147,7 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-          {portfolio.map((item) => (
-            <div key={item.id}></div>
-          ))}
-        </div>
-        <div>
+        <div className=" py-6 md:py-10">
           <Carousel>
             <CarouselContent>
               {portfolio.map((item) => (
@@ -165,7 +160,7 @@ export default function PortfolioSection() {
                       alt={item.title}
                       width={300}
                       height={300}
-                      className="w-full h-40 object-cover rounded-md z-50 grayscale hover:grayscale-0 hover:cursor-pointer"
+                      className="w-full h-40 object-cover rounded-md z-50  hover:cursor-pointer"
                     />
                     <h2 className="text-lg font-normal mt-4 bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent ">
                       {item.title}
@@ -189,9 +184,10 @@ export default function PortfolioSection() {
                         className="text-blue-600 hover:underline">
                         <FaGithub size={24} />
                       </Link>
-                    </div>
-                    {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-500/50 opacity-30 backdrop-blur-md "></div> */}
-                  </div>{" "}
+                    </div>{" "}
+                  </div>
+
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-500/50 opacity-30 backdrop-blur-md "></div> */}
                 </CarouselItem>
               ))}
             </CarouselContent>
