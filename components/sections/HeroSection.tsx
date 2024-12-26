@@ -6,10 +6,15 @@ import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import BlurIn from "../ui/blur-in";
 import Meteors from "../ui/meteors";
+import { Spotlight } from "../ui/Spotlight";
 
 export default function HeroSection() {
   return (
     <div className=" py-10 md:py-[6rem]">
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
       {/* <Meteors number={30} /> */}
       <div className=" max-w-7xl mx-auto ">
         <div className=" flex items-center justify-center ">

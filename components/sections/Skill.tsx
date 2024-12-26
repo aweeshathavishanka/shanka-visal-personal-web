@@ -11,7 +11,7 @@ export default function Skill() {
         <div className="max-w-7xl mx-auto py-4 md:py-[3rem]">
           <div className=" flex items-center justify-center">
             <Tag
-              text="Skill"
+              text="Skills"
               icon={<SiHyperskill size={16} />}
               textColor="text-blue-600"
               borderColor="border-blue-600"
