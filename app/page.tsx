@@ -1,6 +1,7 @@
 import AboutMe from "@/components/sections/AboutMe";
 import Achievements from "@/components/sections/Achievements";
 import CTATags from "@/components/sections/CTATags";
+import Experience from "@/components/sections/Experience";
 import GallerySection from "@/components/sections/GallerySection";
 import HeroSection from "@/components/sections/HeroSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <Skill />
       <Tools />
       <PortfolioSection />
+      <Experience />
       <Qualification />
       <Achievements />
       <GallerySection />
