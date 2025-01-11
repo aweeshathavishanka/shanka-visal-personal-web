@@ -12,14 +12,14 @@ import ScrollProgress from "@/components/ui/scroll-progress";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white min-h-screen">
+    <main className="  bg-black text-white min-h-screen">
       <ScrollProgress className="top-0" />
       <HeroSection />
       <CTATags />
       <Skill />
       <Tools />
-      <PortfolioSection />
       <Experience />
+      <PortfolioSection />
       <Qualification />
       <Achievements />
       <GallerySection />

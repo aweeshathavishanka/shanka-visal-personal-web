@@ -87,45 +87,51 @@ const certificates = [
 
 export function QualificationList() {
   return (
-    <div className="grid grid-cols-1  gap-4 max-w-3xl mx-auto w-full md:h-[60vh] overflow-y-auto px-10 ">
-      {certificates.map((certificate, index) => (
-        <div key={index}>
-          <div className=" md:grid flex md:grid-cols-3 gap-10 items-center justify-between ">
-            <div>
-              {" "}
-              <h1 className="bg-gradient-to-l from-white to-gray-400 text-sm bg-clip-text text-transparent">
-                {certificate.date}
-              </h1>
-            </div>
-            <div className=" text-center pb-3">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <h1 className="bg-gradient-to-t from-white to-white text-center items-center text-lg bg-clip-text text-transparent">
-                      {certificate.title}
+    <>
+      <div>
+        <div>
+          <div className="grid grid-cols-1  gap-4 max-w-5xl py-10 mx-auto w-full ">
+            {certificates.map((certificate, index) => (
+              <div key={index}>
+                <div className=" md:grid flex md:grid-cols-3 md:gap-10 items-center justify-between ">
+                  <div>
+                    {" "}
+                    <h1 className="bg-gradient-to-l from-white to-gray-400 text-xs md:text-sm bg-clip-text text-transparent">
+                      {certificate.date}
                     </h1>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <Image
-                      src={certificate.img}
-                      alt="Certificate"
-                      width={300}
-                      height={300}
-                    />
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </div>
+                  </div>
+                  <div className=" text-center pb-3">
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <h1 className="bg-gradient-to-t from-white to-white text-center items-center text-sm md:text-lg bg-clip-text text-transparent">
+                            {certificate.title}
+                          </h1>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <Image
+                            src={certificate.img}
+                            alt="Certificate"
+                            width={300}
+                            height={300}
+                          />
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
 
-            <div>
-              <h1 className="bg-gradient-to-r from-white text-end to-gray-400 text-sm bg-clip-text text-transparent">
-                {certificate.institute}
-              </h1>
-            </div>
+                  <div>
+                    <h1 className="bg-gradient-to-r from-white text-end text-xs md:text-sm to-gray-400 bg-clip-text text-transparent">
+                      {certificate.institute}
+                    </h1>
+                  </div>
+                </div>
+                <Separator className=" my-3 opacity-20" />
+              </div>
+            ))}
           </div>
-          <Separator className=" my-3 opacity-20" />
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 }

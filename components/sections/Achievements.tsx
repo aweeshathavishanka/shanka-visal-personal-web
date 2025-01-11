@@ -1,6 +1,7 @@
 import React from "react";
 import { SiHyperskill } from "react-icons/si";
 import Tag from "../shared/tag";
+import CompetiionList from "./CompetiionList";
 
 export default function Achievements() {
   return (
@@ -27,6 +28,9 @@ export default function Achievements() {
                   design, development, and freelancing.
                 </p>
               </div>
+            </div>
+            <div>
+              <CompetiionList />
             </div>
           </div>
         </div>

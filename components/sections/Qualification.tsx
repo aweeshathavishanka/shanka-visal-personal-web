@@ -8,9 +8,9 @@ export default function Qualification() {
     <div>
       <div className=" py-10 md:py-[6rem] md:px-0 px-6">
         <div className="max-w-7xl mx-auto py-4 md:py-[3rem]">
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <div className=" flex items-start justify-start">
+          <div className="">
+            <div className=" flex flex-col items-center justify-center">
+              <div className=" flex items-center flex-col justify-center">
                 <Tag
                   text="Qualification"
                   icon={<SiHyperskill size={16} />}
@@ -19,15 +19,15 @@ export default function Qualification() {
                   backgroundColor="bg-transparent"
                 />
               </div>
-              <h1 className=" text-4xl font-normal bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent max-w-xl  pt-3 text-start">
+              <h1 className=" text-4xl text-center font-normal bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent max-w-xl  pt-3">
                 My Academic and Professional Foundations
               </h1>
-              <p className=" text-start max-w-xl pt-3 text-gray-500">
+              <p className=" text-center max-w-xl pt-3 text-gray-500">
                 A journey of learning and growth that fuels my expertise in
                 design, development, and freelancing.
               </p>
             </div>
-            <div>
+            <div className=" py-10">
               <QualificationList />
             </div>
           </div>
