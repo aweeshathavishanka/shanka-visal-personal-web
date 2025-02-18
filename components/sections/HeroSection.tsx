@@ -43,7 +43,11 @@ export default function HeroSection() {
                 <Link href={"/"}>Download CV</Link>
               </Button>
               <Button variant={"link"} className=" text-white  bg-transparent ">
-                Let&apos; Connect <IoIosArrowRoundForward />
+                <Link
+                  href={"https://cal.com/shanka-visal"}
+                  className=" flex items-center gap-2">
+                  Let&apos; Connect <IoIosArrowRoundForward />
+                </Link>
               </Button>
             </div>
           </div>

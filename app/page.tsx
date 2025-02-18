@@ -72,9 +72,11 @@ export default function Home() {
           </Button>
         </div>
         <div>
-          <Button className=" rounded-full bg-white text-black hover:text-white text-xs py-0.5">
-            Contact Me <IoIosArrowRoundForward />
-          </Button>
+          <Link href="https://cal.com/shanka-visal">
+            <Button className=" rounded-full bg-white text-black hover:text-white text-xs py-0.5">
+              Contact Me <IoIosArrowRoundForward />
+            </Button>
+          </Link>
         </div>
       </nav>
       <nav className=" sticky top-4 z-50 bg-black bg-opacity-50 backdrop-blur-md pl-6 pr-3 py-2  max-w-sm mx-auto rounded-full border border-white/20 items-center justify-between flex md:hidden">
@@ -142,9 +144,11 @@ export default function Home() {
               </Button>
             </DropdownMenuItem>
             <DropdownMenuItem className="">
-              <Button className=" rounded-full bg-white text-black hover:text-white text-xs py-0.5">
-                Contact Me <IoIosArrowRoundForward />
-              </Button>
+              <Link href="https://cal.com/shanka-visal">
+                <Button className=" rounded-full bg-white text-black hover:text-white text-xs py-0.5">
+                  Contact Me <IoIosArrowRoundForward />
+                </Button>
+              </Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

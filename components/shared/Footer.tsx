@@ -4,6 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { Button } from "../ui/button";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -19,26 +21,41 @@ export default function Footer() {
         <h1 className=" text-7xl font-medium text-center bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent ">
           Let&apos;s create <br /> your next big idea.
         </h1>
-        <Button className=" mt-6 bg-white text-black rounded-full hover:text-white">
-          Contact Me
-        </Button>
+        <Link href={"https://cal.com/shanka-visal"}>
+          <Button className=" mt-6 bg-white text-black rounded-full hover:text-white">
+            Contact Me
+          </Button>
+        </Link>
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
           {/* Social Media Icons */}
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <Link
+              href="https://www.facebook.com/profile.php?id=100009443564668"
+              className="text-gray-400 hover:text-white">
               <FaFacebookF size={20} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link
+              href="https://x.com/Shanka_Visal"
+              className="text-gray-400 hover:text-white">
               <FaXTwitter size={20} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/shankavisa"
+              className="text-gray-400 hover:text-white">
               <FaLinkedin size={20} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </Link>
+            <Link
+              href="https://github.com/ShankaVisal"
+              className="text-gray-400 hover:text-white">
+              <FaGithub size={20} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/shanka_visal__/"
+              className="text-gray-400 hover:text-white">
               <FaInstagram size={20} />
-            </a>
+            </Link>
           </div>
           {/* Copyright Section */}
           <div className="text-center text-gray-500 text-sm">
