@@ -99,50 +99,47 @@ export function QualificationList() {
   return (
     <>
       <div>
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-10  py-10 mx-auto w-full ">
-            {certificates.map((certificate, index) => (
-              <div key={index}>
-                <div className=" h-[150px]  ">
-                  <div className=" ">
-                    <div>
-                      <h1 className=" bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent text-3xl pb-4">
-                        {certificate.no}
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-10  py-10 mx-auto w-full ">
+          {certificates.map((certificate, index) => (
+            <div key={index}>
+              <div className=" h-[150px]  ">
+                <div className=" ">
+                  <div>
+                    <h1 className=" bg-gradient-to-br from-blue-600 to-blue-900 bg-clip-text text-transparent text-3xl pb-4">
+                      {certificate.no}
+                    </h1>
+                  </div>
+                  <div>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger>
+                          <h1 className="text-3xl bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent text-start items-center md:text-3xl font-normal ">
+                            {certificate.title}
+                          </h1>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <Image
+                            src={certificate.img}
+                            alt="Certificate"
+                            width={300}
+                            height={300}
+                          />
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                    <div className=" flex items-start gap-2 pt-3">
+                      <h1 className="bg-gradient-to-l from-white to-gray-400 text-xs md:text-sm bg-clip-text text-transparent">
+                        {certificate.date}
                       </h1>
-                    </div>
-                    <div>
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger>
-                            <h1 className=" bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent text-start items-center text-sm md:text-3xl font-normal ">
-                              {certificate.title}
-                            </h1>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <Image
-                              src={certificate.img}
-                              alt="Certificate"
-                              width={300}
-                              height={300}
-                            />
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                      <div className=" flex items-start gap-2 pt-3">
-                        <h1 className="bg-gradient-to-l from-white to-gray-400 text-xs md:text-sm bg-clip-text text-transparent">
-                          {certificate.date}
-                        </h1>
-                        <h1 className="bg-gradient-to-r from-white text-end text-xs md:text-sm to-gray-400 bg-clip-text text-transparent">
-                          {certificate.institute}
-                        </h1>
-                      </div>
+                      <h1 className="bg-gradient-to-r from-white text-end text-xs md:text-sm to-gray-400 bg-clip-text text-transparent">
+                        {certificate.institute}
+                      </h1>
                     </div>
                   </div>
                 </div>
-                <Separator className=" my-3 opacity-20 max-w-xl" />
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

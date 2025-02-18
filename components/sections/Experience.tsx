@@ -47,12 +47,12 @@ const experience = [
 export default function Experience() {
   return (
     <div>
-      <div>
+      <div className=" md:px-0 px-6">
         <div>
           <div className=" max-w-7xl mx-auto">
             <div className=" flex flex-col items-start ">
               <Tag
-                text="Who am I ?"
+                text="What's my Experience ?"
                 icon={<SiHyperskill size={16} />}
                 textColor="text-blue-600"
                 borderColor="border-blue-600"

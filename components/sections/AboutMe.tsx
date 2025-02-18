@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 export default function AboutMe() {
   return (
     <div>
-      <div className=" py-10 md:py-[6rem] md:px-0 px-6">
+      <div className="  md:px-0 px-6">
         <div>
           <div className="max-w-7xl mx-auto py-4 md:py-[3rem]">
             <div className=" flex items-center justify-center">
@@ -76,7 +76,9 @@ export default function AboutMe() {
                     technology together !!
                   </p>
                   <div className=" pt-6">
-                    <Button>Download CV</Button>
+                    <Button className="bg-white text-black rounded-full hover:text-white">
+                      Download CV
+                    </Button>
                   </div>
                 </div>
               </div>

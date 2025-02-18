@@ -20,15 +20,27 @@ const competitions = [
     description:
       "1st RunnersUp organized by the FOUNTAIN Project of the European Union",
   },
+  {
+    id: 4,
+    title: "The Startup Pitch Competition",
+    description: "Participation certification",
+  },
+  {
+    id: 5,
+    title: "Space Quiz Competition",
+    description: "Top five | 2nd Inter University Space Quiz Competition 2021",
+  },
 ];
 
 export default function CompetiionList() {
   return (
-    <div className=" py-10">
-      <div>
+    <div className="">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-3">
         {competitions.map((competition) => (
           <div key={competition.id} className=" py-3">
-            <h1 className="">{competition.title}</h1>
+            <h1 className="text-2xl font-normal text-start bg-gradient-to-br from-white to-gray-500 bg-clip-text text-transparent pt-3">
+              {competition.title}
+            </h1>
             <p>{competition.description}</p>
           </div>
         ))}

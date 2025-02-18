@@ -6,7 +6,7 @@ import { QualificationList } from "./QualificationList";
 export default function Qualification() {
   return (
     <div>
-      <div className=" py-10 md:py-[6rem] md:px-0 px-6">
+      <div className="  md:px-0 px-6">
         <div className="max-w-7xl mx-auto py-4 md:py-[3rem]">
           <div className="">
             <div className=" flex flex-col items-start ">

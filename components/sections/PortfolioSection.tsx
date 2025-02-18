@@ -148,7 +148,7 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        <div className=" py-6 md:py-10">
+        <div className=" py-6 md:py-10 px-10 md:px-0">
           <Carousel>
             <CarouselContent>
               {portfolio.map((item) => (
